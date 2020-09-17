@@ -1,0 +1,9 @@
+[Trigger]
+Operation=Upgrade
+Type=Package
+Target=openbox
+
+[Action]
+Description = Updating busybox symlinks
+When=PostTransaction
+Exec=/usr/bin/update-coreutils2busybox.sh
